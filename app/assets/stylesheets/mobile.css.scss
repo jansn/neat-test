@@ -1,0 +1,74 @@
+// Place all the styles related to the mobile controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bourbon";
+@import "neat";
+
+$mobile: max-width 480px 4;
+
+.container {
+	@include outer-container;
+}
+.links {
+	height: 200px;
+	background-color: white;
+	font-size: 1.0em;
+    color: black;
+	@include breakpoint($mobile) {
+      background-color: gray;
+      font-size: 1.2em;
+      color: white;
+    }
+    @include breakpoint(581px) {
+      background-color: green;
+      font-size: 1.3em;
+      color: white;
+    }
+    @include breakpoint(781px) {
+      background-color: black;
+      font-size: 1.5em;
+      color: white;
+    }
+}
+.rechts {
+	height: 200px;
+	background-color: white;
+	font-size: 1.0em;
+    color: black;
+	@include breakpoint($mobile) {
+      background-color: green;
+      font-size: 1.2em;
+      color: white;
+    }
+    @include breakpoint(581px) {
+      background-color: gray;
+      font-size: 1.3em;
+      color: white;
+    }
+    @include breakpoint(781px) {
+      background-color: black;
+      font-size: 1.5em;
+      color: white;
+    }
+}
+.onder {
+	height: 200px;
+	background-color: white;
+	font-size: 1.0em;
+    color: black;
+	@include breakpoint($mobile) {
+      background-color: black;
+      font-size: 1.2em;
+      color: white;
+    }
+    @include breakpoint(581px) {
+      background-color: red;
+      font-size: 1.3em;
+      color: white;
+    }
+    @include breakpoint(781px) {
+      background-color: green;
+      font-size: 1.5em;
+      color: white;
+    }
+}
